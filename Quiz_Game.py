@@ -1,16 +1,16 @@
 import time
 #Prepare for a Challenge
 
-time.sleep(3)
+time.sleep(3) # to delay the run time of the file
 
-total = 0
+total = 0 # to the points of the correct answers
 
-item_1 = input("1.) Who is the father of Computer science? ")
-if item_1.lower() == "charles babbage":
-    print("correct!")
-    total += 1
+item_1 = input("1.) Who is the father of Computer science? ")  # this is a function that prints question and allow the user to input ther answer.
+if item_1.lower() == "charles babbage": #  if the user input identical to the charle babbage  or equal to the user input i will print correct.
+    print("correct!") # correct will be the output if the answer of the user is correct.
+    total += 1  # if the answer of the user is correct the total will add 1 
 else:
-    print("incorrect answer!")
+    print("incorrect answer!") # if the answer is wrong it will print incorrect answer
 
 item_2 = input("2.) In a computer, most processing takes place in _______? ")
 if item_2.lower() == "cpu" or "control processing unit":
@@ -77,9 +77,9 @@ else:
     
 print(f"your total correct answers is {total} out of 10 ")
 
-if total <= 5 :
+if total <= 5 : # if the total score is less than 5 the output is in the line 81
     print("you need more study!")
-elif total >= 6:
+elif total >= 6: # and if the total is greater than 6 or more the output is in the line 83
     print("goodjob!")
 
     
